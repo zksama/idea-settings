@@ -1,0 +1,8 @@
+<templateSet group="other">
+  <template name="rne" value="if ($VAR$ == null || !OperationCode.CODE_OK.equals($VAR$.getCode())) {&#10;    $END$&#10;}" description="if (resultOrder == null || !OperationCode.CODE_OK.equals(resultOrder.getCode()))" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestFirstVariableName(&quot;Object&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

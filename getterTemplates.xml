@@ -1,0 +1,13 @@
+<application>
+  <component name="GetterTemplates">
+    <option name="defaultTempalteName" value="weahan" />
+    <option name="templates">
+      <list>
+        <TemplateResource>
+          <option name="fileName" value="weahan" />
+          <option name="template" value="#if($field.modifierStatic)&#10;static ##&#10;#end&#10;final&#10;$field.type ##&#10;#set($name = $StringUtil.capitalizeWithJavaBeanConvention($StringUtil.sanitizeJavaIdentifier($helper.getPropertyName($field, $project))))&#10;#if ($field.boolean &amp;&amp; $field.primitive)&#10;is##&#10;#else&#10;get##&#10;#end&#10;${name}() {&#10;return $field.name;&#10;}" />
+        </TemplateResource>
+      </list>
+    </option>
+  </component>
+</application>

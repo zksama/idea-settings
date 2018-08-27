@@ -1,0 +1,7 @@
+<templateSet group="user">
+  <template name="rn" value="return null;" description="return null;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
